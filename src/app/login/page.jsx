@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
   FaEnvelope as Mail,
@@ -17,6 +17,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const { register, loginWithGoogle } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -151,6 +152,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
