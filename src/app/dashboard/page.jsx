@@ -313,8 +313,7 @@ export default function DashboardPage() {
               <span>Ask Questions</span>
             </div>
             <p className="text-sm mb-4">
-              Get instant answers from your documents using our AI-powered Q&A
-              system.
+              Get instant answers from your documents using our Q&A system.
             </p>
             <Link href="/qa">
               <button className="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600">
