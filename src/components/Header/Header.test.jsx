@@ -4,7 +4,7 @@ import Header from "./Header";
 describe("Header component", () => {
   it("renders the logo", () => {
     render(<Header />);
-    const logo = screen.getByText(/DocuManage/i); // Assuming the logo is text
+    const logo = screen.getByText(/DocuManage/i); 
     expect(logo).toBeInTheDocument();
   });
 

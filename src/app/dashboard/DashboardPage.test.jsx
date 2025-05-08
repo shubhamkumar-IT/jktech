@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import DashboardPage from "./page"; // Adjust path as needed
+import DashboardPage from "./page"; 
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../../lib/auth";
 import { documentService, ingestionService } from "../../../lib/mock-service";

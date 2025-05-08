@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "../../../lib/auth"; // Ensure you have this hook
-import { userService } from "../../../lib/mock-service"; // Ensure this service is defined
-import { ToastContainer, toast } from "react-toastify"; // React Toastify
-import "react-toastify/dist/ReactToastify.css"; // React Toastify CSS
+import { useAuth } from "../../../lib/auth";
+import { userService } from "../../../lib/mock-service";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Header from "../../components/Header/Navigation";
 
 export default function UsersPage() {
@@ -16,7 +16,7 @@ export default function UsersPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   // User form state
-  const [showUserDialog, setShowUserDialog] = useState(false); // Manage modal visibility
+  const [showUserDialog, setShowUserDialog] = useState(false);
   const [editingUser, setEditingUser] = useState(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

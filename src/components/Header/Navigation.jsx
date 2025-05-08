@@ -15,7 +15,7 @@ import {
   Search,
   LogOut,
   User,
-} from "lucide-react"; // Import icons
+} from "lucide-react";
 
 const Header = () => {
   const { user, logout, isAdmin } = useAuth();
