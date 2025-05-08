@@ -1,9 +1,6 @@
-/**
- * @jest-environment jsdom
- */
 
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import DocumentsPage from "./page"; // Adjust path as needed
+import DocumentsPage from "./page"; 
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../../lib/auth";
 import { documentService } from "../../../lib/mock-service";

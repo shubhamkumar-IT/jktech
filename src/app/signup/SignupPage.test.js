@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import SignupPage from "../signup/page"; 
+import SignupPage from "./page"; 
 import { useAuth } from "../../../lib/auth";
 import { useRouter } from "next/navigation";
 

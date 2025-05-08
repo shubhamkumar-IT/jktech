@@ -2,10 +2,10 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "../../../lib/auth"; // Ensure you have this hook
-import { qaService } from "../../../lib/mock-service"; // Ensure this service is defined
-import { ToastContainer, toast } from "react-toastify"; // React Toastify
-import "react-toastify/dist/ReactToastify.css"; // React Toastify CSS
+import { useAuth } from "../../../lib/auth"; 
+import { qaService } from "../../../lib/mock-service"; 
+import { ToastContainer, toast } from "react-toastify"; 
+import "react-toastify/dist/ReactToastify.css"; 
 import {
   Search,
   Send,
