@@ -3,7 +3,7 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import IngestionsPage from "../app/(dashboard)/ingestion/page"; // Update this path as per your project
 import { useAuth } from "../../../lib/auth";
 import { ingestionService } from "../../../lib/mock-service";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 // Mock dependencies
 jest.mock("../../../lib/auth", () => ({
